@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- css files -->
+		<link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="baggage.css" />
+        <link rel="stylesheet" href="tickets.css" />
+		<!-- google fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@100;400;600&family=Pavanam&family=Poppins:wght@200;400;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<script
+			src="https://kit.fontawesome.com/c4254e24a8.js"
+			crossorigin="anonymous"
+		></script>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+		<!-- bootstrap -->
+		<link type="text/css" rel="stylesheet" href="bootstrap.min.css" />
+		<title>HighAir</title>
+	</head>
+    <body>
+		<nav class="main-navigation">
+			<img src="img/logo.svg" alt="Logo" class="img-logo" />
+			<img src="img/mobile-logo.png" alt="Logo" class="img-logo mobile-logo" />
+			<ul>
+				<li><a href="#">Help</a></li>
+				<li><a href="#">Hotels</a></li>
+				<li><a href="#">Cars</a></li>
+				<li><a href="#">Sign In</a></li>
+				<li>
+					<span class="last-option"><a href="#">Sign Up</a></span>
+				</li>
+			</ul>
+			<div class="hamburger-menu">&#9776;</div>
+			<div class="mobile-menu">
+				<ul>
+					<li><a href="#">Homepage</a></li>
+					<li><a href="#">Help</a></li>
+					<li><a href="#">Hotels</a></li>
+					<li><a href="#">Cars</a></li>
+				</ul>
+			</div>
+		</nav>
+
+        <section class="steps">
+
+        </section>
+
+        <section class="baggage-heading">
+            <h2> Please select what type of bags you want to bring onboard </h2>
+            <p> This is a mandatory selection </p>
+        </section>
+
+        <div class="baggage-direction">
+            <img src="img/flight-icon.png" alt="flight icon" class="flight-icon">
+            <p>
+                Sarajevo to Amsterdam
+            </p>
+        </div>
+
+        <section class="baggage-options">
+            <div class="options">
+                <div class="option-1">
+                    <p class="option-text">
+                        40 x 20 x 25 cm <br>
+                        1 Small bag <br>
+                        Fits under your seats
+                    </p>
+                    <img src="img/backpack.png" alt="backpack">
+                </div>
+            
+                <div class="option-2">
+                    <p class="option-text">
+                        55 x 40 x 20 cm <br>
+                        10kg Cabin Bag
+                    </p>
+                    <img src="img/suitcase.png" alt="backpack" class="suitcase">
+                </div>
+            
+                <div class="option-3">
+                    <p class="option-text">
+                        Small bag 40x20x25 cm <br>
+                        55x40x20 cm 10kg Cabin Bag
+                    </p>
+                    <img src="img/both-luggages.png" alt="backpack" class="suitcase-backpack">
+                </div>
+            </div>
+
+            <form action="#" class="baggage-form">
+                <div class="radio-group">
+                    <input type="radio" id="backpack" name="luggage" value="backpack">
+                    <label for="backpack">Small Backpack</label>
+                    <p>Included in the price</p>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" id="big-luggage" name="luggage" value="big-luggage">
+                    <label for="big-luggage">Big Luggage</label>
+                    <p>+$6.00</p>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" id="both" name="luggage" value="both">
+                    <label for="both">Small Backpack <br> + Big Luggage</label>
+                    <p>+$10.00</p>
+                </div>
+            </form>            
+        </section>       
+
+        <p class="additional-fee">
+            Additional fee: <span> $6.00 </span>
+        </p>
+
+        <div class="navigation-options">
+            <p class="baggage-back-button">
+				Back
+			</p>
+
+            <button class="button continue-baggage-btn">
+                Continue
+                <img
+                    src="img/right-arrow.png"
+                    alt="Right Arrow"
+                    class="continue-baggage-icon"
+                />
+            </button>
+        </div>
+
+    </body>
+    </html>

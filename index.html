@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- css files -->
+		<link rel="stylesheet" href="style.css" />
+		<!-- google fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@100;400;600&family=Pavanam&family=Poppins:wght@200;400;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<script
+			src="https://kit.fontawesome.com/c4254e24a8.js"
+			crossorigin="anonymous"
+		></script>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+		<title>HighAir</title>
+	</head>
+	<body>
+		<nav class="main-navigation">
+			<img src="img/logo.svg" alt="Logo" class="img-logo" />
+			<img src="img/mobile-logo.png" alt="Logo" class="img-logo mobile-logo" />
+			<ul>
+				<li><a href="#">Help</a></li>
+				<li><a href="#">Hotels</a></li>
+				<li><a href="#">Cars</a></li>
+				<li><a href="#">Sign In</a></li>
+				<li>
+					<span class="last-option"><a href="#">Sign Up</a></span>
+				</li>
+			</ul>
+			<div class="hamburger-menu">&#9776;</div>
+			<div class="mobile-menu">
+				<ul>
+					<li><a href="#">Homepage</a></li>
+					<li><a href="#">Help</a></li>
+					<li><a href="#">Hotels</a></li>
+					<li><a href="#">Cars</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<section class="banner">
+			<div class="banner-content">
+				<h1>
+					The sky is the limit, <br />
+					we take you <span class="banner-highlight">higher</span>
+				</h1>
+			</div>
+		</section>
+
+		<section class="form">
+			<input class="tab-radio" id="one" name="group" type="radio" checked />
+			<input class="tab-radio" id="two" name="group" type="radio" />
+			<input class="tab-radio" id="three" name="group" type="radio" />
+		  
+			<div class="tabs">
+			  <label class="tab" id="one-tab" for="one">
+				<img src="img/plane.png" alt="Logo" />
+				Flight
+			  </label>
+		  
+			  <label class="tab" id="two-tab" for="two">
+				<img src="img/seat.png" alt="Logo" />
+				Manage Booking
+			  </label>
+		  
+			  <label class="tab" id="three-tab" for="three">
+				<img src="img/flight-status.png" alt="Logo" class="status-icon" />
+				Flight Status
+			  </label>
+			</div>
+		  
+			<div class="panels">
+			  <div class="panel" id="one-panel">
+				<div class="booking-form">
+				  <form>
+					<div class="form-checkbox">
+					  <label for="roundtrip">
+						<input type="radio" id="roundtrip" name="flight-type" checked/>
+						<span></span>Return
+					  </label>
+		  
+					  <label for="one-way">
+						<input type="radio" id="one-way" name="flight-type" />
+						<span></span>One way
+					  </label>
+					</div>
+					</form>
+		  
+					<div class="form-inputs">
+					  <div class="first-row">
+						<div class="input-container">
+						  <input type="text" id="from-input" class="from-to" placeholder=" " required>
+						  <label for="from-input" class="form-label">From</label>
+						</div>
+		  
+						<img src="img/undo.png" alt="reverse choices">
+		  
+						<div class="input-container">
+						  <input type="text" id="to-input" class="from-to" placeholder=" " required>
+						  <label for="to-input" class="form-label">To</label>
+						</div>
+					  </div>
+		  
+					  <div class="second-row">
+						<div class="first-column">
+						  <div class="input-container">
+							<input type="date" id="departure-date" placeholder=" " required>
+							<label for="departure-date" class="form-label"> Departure Date </label>
+						  </div>
+		  
+						  <div class="input-container">
+							<input type="date" id="return-date" placeholder=" " required>
+							<label for="return-date" class="form-label"> Return Date </label>
+						  </div>
+						</div>
+		  
+						<div class="second-column">
+						  <div class="input-container">
+							<select id="passengers" placeholder=" " required>
+							  <option value="1">1</option>
+							  <option value="2">2</option>
+							  <option value="3">3</option>
+							  <option value="4">4</option>
+							  <option value="5">5</option>
+							</select>
+							<label for="passengers" class="select-label">Passengers</label>
+						  </div>
+		  
+						  <div class="input-container">
+							<select id="ticket-class" placeholder=" " required>
+							  <option value="business">Business class</option>
+							  <option value="economy">Economy class</option>
+							</select>
+							<label for="ticket-class" class="select-label">Ticket Class</label>
+						  </div>
+						</div>
+					  </div>
+
+					  
+						<button class="button search-btn">
+							<img src="img/search.png" alt="Right Arrow" class="search-btn-icon" />
+							Search Flights
+						  </button>
+						  
+					</div>
+				</div>
+			  </div>
+		  
+			  <div class="panel" id="two-panel">
+				<div class="form-inputs">
+				  <div class="first-row">
+					<div class="input-container">
+					  <input type="text" id="ticket-input" placeholder=" " required>
+					  <label for="from-input" class="form-label">Ticket Number</label>
+					</div>
+		  
+					<div class="input-container">
+					  <input type="text" id="passenger-input" placeholder=" " required>
+					  <label for="to-input" class="form-label">Passenger's Last Name</label>
+					</div>
+				  </div>
+		  
+				  <button class="button retrieve-btn">
+					Retrieve Booking
+					<img src="img/right-arrow.png" alt="Right Arrow" class="retrieve-btn-icon" />
+				  </button>
+				</div>
+			  </div>
+		  
+			  <div class="panel" id="three-panel">
+				<div class="form-inputs">
+				  <div class="first-row">
+					<div class="input-container">
+					  <input type="text" id="flight-input" placeholder=" " required>
+					  <label for="from-input" class="form-label">Flight Number</label>
+					</div>
+		  
+					<div class="input-container">
+					  <input type="text" id="status-input" placeholder=" " required>
+					  <label for="to-input" class="form-label">Status</label>
+					</div>
+				  </div>
+		  
+				  <button class="button retrieve-btn">
+					Check Flight
+					<img src="img/right-arrow.png" alt="Right Arrow" class="retrieve-btn-icon" />
+				  </button>
+				</div>
+			  </div>
+			</div>
+		  </section>		  
+
+		<section class="special-offers">
+			<div class="offer-content">
+				<img src="img/amsterdam.png" alt="Amsterdam" class="offer-img" />
+				<p>
+					Elevate your Amsterdam layover experience with our premium stopover
+					service. Indulge in complimentary hotel stays and immerse yourself in
+					the captivating essence of the city during your transit at Amsterdam
+					Airport.
+				</p>
+				<button class="button discover-btn">
+					Discover
+					<img
+						src="img/right-arrow.png"
+						alt="Right Arrow"
+						class="discover-btn-icon"
+					/>
+				</button>
+			</div>
+
+			<div class="offer-content">
+				<img src="img/amsterdam.png" alt="Amsterdam" class="offer-img" />
+				<p>
+					Elevate your Amsterdam layover experience with our premium stopover
+					service. Indulge in complimentary hotel stays and immerse yourself in
+					the captivating essence of the city during your transit at Amsterdam
+					Airport.
+				</p>
+				<button class="button discover-btn">
+					Discover
+					<img
+						src="img/right-arrow.png"
+						alt="Right Arrow"
+						class="discover-btn-icon"
+					/>
+				</button>
+			</div>
+
+			<div class="offer-content">
+				<img src="img/amsterdam.png" alt="Amsterdam" class="offer-img" />
+				<p>
+					Elevate your Amsterdam layover experience with our premium stopover
+					service. Indulge in complimentary hotel stays and immerse yourself in
+					the captivating essence of the city during your transit at Amsterdam
+					Airport.
+				</p>
+				<button class="button discover-btn">
+					Discover
+					<img
+						src="img/right-arrow.png"
+						alt="Right Arrow"
+						class="discover-btn-icon"
+					/>
+				</button>
+			</div>
+
+			<div class="offer-content">
+				<img src="img/amsterdam.png" alt="Amsterdam" class="offer-img" />
+				<p>
+					Elevate your Amsterdam layover experience with our premium stopover
+					service. Indulge in complimentary hotel stays and immerse yourself in
+					the captivating essence of the city during your transit at Amsterdam
+					Airport.
+				</p>
+				<button class="button discover-btn">
+					Discover
+					<img
+						src="img/right-arrow.png"
+						alt="Right Arrow"
+						class="discover-btn-icon"
+					/>
+				</button>
+			</div>
+
+			<div class="offer-content">
+				<img src="img/amsterdam.png" alt="Amsterdam" class="offer-img" />
+				<p>
+					Elevate your Amsterdam layover experience with our premium stopover
+					service. Indulge in complimentary hotel stays and immerse yourself in
+					the captivating essence of the city during your transit at Amsterdam
+					Airport.
+				</p>
+				<button class="button discover-btn">
+					Discover
+					<img
+						src="img/right-arrow.png"
+						alt="Right Arrow"
+						class="discover-btn-icon"
+					/>
+				</button>
+			</div>
+
+			<div class="offer-content">
+				<img src="img/amsterdam.png" alt="Amsterdam" class="offer-img" />
+				<p>
+					Elevate your Amsterdam layover experience with our premium stopover
+					service. Indulge in complimentary hotel stays and immerse yourself in
+					the captivating essence of the city during your transit at Amsterdam
+					Airport.
+				</p>
+				<button class="button discover-btn">
+					Discover
+					<img
+						src="img/right-arrow.png"
+						alt="Right Arrow"
+						class="discover-btn-icon"
+					/>
+				</button>
+			</div>
+
+			<div class="more-offers">
+				<p>To the new cities with special deals!</p>
+				<button class="button deals-btn">Show All Offers</button>
+			</div>
+		</section>
+
+		<hr class="certificates-hr" />
+		<section class="certificates">
+			<div class="certificate">
+				<img src="img/cert1.png" alt="certificate" class="certificate-img" />
+				<p>Five Star Airline</p>
+			</div>
+
+			<div class="certificate">
+				<img src="img/cert2.png" alt="certificate" class="certificate-img" />
+				<p>World Class Airline</p>
+			</div>
+
+			<div class="certificate">
+				<img src="img/cert3.png" alt="certificate" class="certificate-img" />
+				<p>Airline Of The Year</p>
+			</div>
+
+			<div class="certificate">
+				<img src="img/cert4.png" alt="certificate" class="certificate-img" />
+				<p>IEnvA Registered</p>
+			</div>
+		</section>
+		</body>
+		</html>
+
+		<script>
+			// JavaScript code to handle the toggle functionality of the hamburger menu
+			const hamburgerMenu = document.querySelector(".hamburger-menu");
+			const mobileMenu = document.querySelector(".mobile-menu");
+			hamburgerMenu.addEventListener("click", function () {
+				mobileMenu.classList.toggle("show");
+			});
+		</script>
+
+		<script>
+			$(".form-control").each(function () {
+				floatedLabel($(this));
+			});
+
+			$(".form-control").on("input", function () {
+				floatedLabel($(this));
+			});
+
+			function floatedLabel(input) {
+				var $field = input.closest(".form-group");
+				if (input.val()) {
+					$field.addClass("input-not-empty");
+				} else {
+					$field.removeClass("input-not-empty");
+				}
+			}
+		</script>
+
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				document
+					.getElementById("one-way")
+					.addEventListener("change", function () {
+						document.getElementById("return-date-group").style.display = "none";
+					});
+				document
+					.getElementById("roundtrip")
+					.addEventListener("change", function () {
+						document.getElementById("return-date-group").style.display =
+							"block";
+					});
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- css files -->
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="tickets.css" />
+
+		<!-- google fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@100;400;600&family=Pavanam&family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
+
+		<script
+			src="https://kit.fontawesome.com/c4254e24a8.js"
+			crossorigin="anonymous"
+		></script>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+		<!-- bootstrap -->
+		<link type="text/css" rel="stylesheet" href="bootstrap.min.css" />
+		<title>HighAir</title>
+	</head>
+	<body>
+		<nav class="main-navigation">
+			<img src="img/logo.svg" alt="Logo" class="img-logo" />
+			<img src="img/mobile-logo.png" alt="Logo" class="img-logo mobile-logo" />
+			<ul>
+				<li><a href="#">Help</a></li>
+				<li><a href="#">Hotels</a></li>
+				<li><a href="#">Cars</a></li>
+				<li><a href="#">Sign In</a></li>
+				<li>
+					<span class="last-option"><a href="#">Sign Up</a></span>
+				</li>
+			</ul>
+			<div class="hamburger-menu">&#9776;</div>
+			<div class="mobile-menu">
+				<ul>
+					<li><a href="#">Homepage</a></li>
+					<li><a href="#">Help</a></li>
+					<li><a href="#">Hotels</a></li>
+					<li><a href="#">Cars</a></li>
+				</ul>
+			</div>
+		</nav>
+
+        <section class="steps">
+
+        </section>
+
+        <section class="previous-search">
+			<p>Showing results for: </p>
+			<div class="previous-form">
+				<div class="input-container">
+					<input class="form-input from-input" type="text" />
+					<label class="input-label">From</label>
+				</div>
+				<div class="input-container">
+					<input class="form-input to-input" type="text" />
+					<label class="input-label">To</label>
+				</div>
+				<div class="input-container">
+					<input class="form-input"/>
+					<label class="input-label">Departure Date</label>
+				</div>
+				<div class="input-container">
+					<input class="form-input"/>
+					<label class="input-label">Return Date</label>
+				</div>
+				<div class="input-container">
+					<input class="form-input"/>
+					<label class="input-label">Passengers</label>
+				</div>
+				<button class="button modify-btn">
+					Modify
+				</button>
+			</div>
+
+			<hr>
+		</section>
+		
+
+        <section class="available-tickets">
+			<div class="flight-direction">
+				<img src="img/flight-icon.png" alt="flight icon" class="flight-icon">
+				<p>
+					Sarajevo to Amsterdam
+				</p>
+			</div>
+
+			<div class="ticket first-selection">
+				<div class="time">
+					<p class="top date">
+						15 April
+					</p>
+
+					<p class="bottom day">
+						Saturday
+					</p>
+				</div>
+
+				<div class="direction">
+					<div class="departure">
+						<div class="top departure-time">
+							<p class="date">
+								20:00
+							</p>
+		
+							<p class="bottom departure-city">
+								Sarajevo
+							</p>
+						</div>
+					</div>
+
+					<div class="flight-art">
+						<p> SA 143 </p>
+						<img src="img/flight-direction.png" alt="flight direction art" class="flight-art-img">
+						<p> 3 hours 15 minutes </p>
+					</div>
+
+					<div class="destination">
+						<div class="top departure-time">
+							<p class="date">
+								23:15
+							</p>
+		
+							<p class="bottom departure-city">
+								Amsterdam
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="price">
+					<p class="value-fare">
+						VALUE FARE
+					</p>
+
+					<p class="value">
+						$64.93
+					</p>
+				</div>
+
+				<button class="button search-btn-ticket selection-1">
+					Select
+				</button>
+			</div>
+
+			<div class="ticket first-selection">
+				<div class="time">
+					<p class="top date">
+						15 April
+					</p>
+
+					<p class="bottom day">
+						Saturday
+					</p>
+				</div>
+
+				<div class="direction">
+					<div class="departure">
+						<div class="top departure-time">
+							<p class="date">
+								20:00
+							</p>
+		
+							<p class="bottom departure-city">
+								Sarajevo
+							</p>
+						</div>
+					</div>
+
+					<div class="flight-art">
+						<p> SA 143 </p>
+						<img src="img/flight-direction.png" alt="flight direction art" class="flight-art-img">
+						<p> 3 hours 15 minutes </p>
+					</div>
+
+					<div class="destination">
+						<div class="top departure-time">
+							<p class="date">
+								23:15
+							</p>
+		
+							<p class="bottom departure-city">
+								Amsterdam
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="price">
+					<p class="value-fare">
+						VALUE FARE
+					</p>
+
+					<p class="value">
+						$64.93
+					</p>
+				</div>
+
+				<button class="button search-btn-ticket selection-1">
+					Select
+				</button>
+			</div>
+
+			<div class="ticket selected-ticket">
+				<div class="time">
+					<p class="top date">
+						15 April
+					</p>
+
+					<p class="bottom day">
+						Saturday
+					</p>
+				</div>
+
+				<div class="direction">
+					<div class="departure">
+						<div class="top departure-time">
+							<p class="date">
+								20:00
+							</p>
+		
+							<p class="bottom departure-city">
+								Sarajevo
+							</p>
+						</div>
+					</div>
+
+					<div class="flight-art">
+						<p> SA 143 </p>
+						<img src="img/flight-direction.png" alt="flight direction art" class="flight-art-img">
+						<p> 3 hours 15 minutes </p>
+					</div>
+
+					<div class="destination">
+						<div class="top departure-time">
+							<p class="date">
+								23:15
+							</p>
+		
+							<p class="bottom departure-city">
+								Amsterdam
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="price">
+					<p class="value-fare">
+						VALUE FARE
+					</p>
+
+					<p class="value">
+						$64.93
+					</p>
+				</div>
+
+				<img src="img/selected.png" alt="" class="selected-icon">
+			</div>
+			
+        </section>
+
+		<section class="available-tickets">
+			<div class="flight-direction">
+				<img src="img/flight-icon.png" alt="flight icon" class="flight-icon">
+				<p>
+					Amsterdam to Sarajevo
+				</p>
+			</div>
+
+			<div class="ticket second-selection">
+				<div class="time">
+					<p class="top date">
+						15 April
+					</p>
+
+					<p class="bottom day">
+						Saturday
+					</p>
+				</div>
+
+				<div class="direction">
+					<div class="departure">
+						<div class="top departure-time">
+							<p class="date">
+								20:00
+							</p>
+		
+							<p class="bottom departure-city">
+								Amsterdam
+							</p>
+						</div>
+					</div>
+
+					<div class="flight-art">
+						<p> SA 143 </p>
+						<img src="img/flight-direction.png" alt="flight direction art" class="flight-art-img">
+						<p> 3 hours 15 minutes </p>
+					</div>
+
+					<div class="destination">
+						<div class="top departure-time">
+							<p class="date">
+								23:15
+							</p>
+		
+							<p class="bottom departure-city">
+								Sarajevo
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="price">
+					<p class="value-fare">
+						VALUE FARE
+					</p>
+
+					<p class="value">
+						$64.93
+					</p>
+				</div>
+
+				<button class="button search-btn-ticket selection-2">
+					Select
+				</button>
+			</div>
+			<div class="ticket selected-ticket-2">
+				<div class="time">
+					<p class="top date">
+						15 April
+					</p>
+
+					<p class="bottom day">
+						Saturday
+					</p>
+				</div>
+
+				<div class="direction">
+					<div class="departure">
+						<div class="top departure-time">
+							<p class="date">
+								20:00
+							</p>
+		
+							<p class="bottom departure-city">
+								Amsterdam
+							</p>
+						</div>
+					</div>
+
+					<div class="flight-art">
+						<p> SA 143 </p>
+						<img src="img/flight-direction.png" alt="flight direction art" class="flight-art-img">
+						<p> 3 hours 15 minutes </p>
+					</div>
+
+					<div class="destination">
+						<div class="top departure-time">
+							<p class="date">
+								23:15
+							</p>
+		
+							<p class="bottom departure-city">
+								Sarajevo
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="price">
+					<p class="value-fare">
+						VALUE FARE
+					</p>
+
+					<p class="value">
+						$64.93
+					</p>
+				</div>
+
+				<img src="img/selected.png" alt="" class="selected-icon">
+			</div>
+			
+			</section>
+
+			<p class="back-button">
+				Back
+			</p>
+        </section>
+
+		<script>
+			$(document).ready(function(){
+				$(".selection-1").click(function(){
+					$(".first-selection").not('.selected-ticket').hide(500); 
+					$(".selected-ticket").css('display', 'flex').hide().fadeIn(1000); 
+				});
+				
+				$(".back-button").click(function(){
+					$(".first-selection").fadeIn(1000);
+					$(".selected-ticket").fadeOut(1000);
+				});
+			});
+		</script>
+		
+		<script>
+			$(document).ready(function(){
+				$(".selection-2").click(function(){
+					$(".second-selection").not('.selected-ticket-2').hide(500); 
+					$(".selected-ticket-2").css('display', 'flex').hide().fadeIn(1000);
+				});
+			
+				$(".back-button").click(function(){
+					$(".second-selection").fadeIn(1000); 
+					$(".selected-ticket-2").fadeOut(1000);
+				});
+			});
+		</script>
+		
+
+</body>
