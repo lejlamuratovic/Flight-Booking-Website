@@ -1,5 +1,6 @@
 /* Import Google font - Poppins */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
 * {
 	margin: 0;
 	padding: 0;
@@ -22,13 +23,6 @@ body {
 	padding: 25px;
 	border-radius: 8px;
 	box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-	/* centering it */
-	margin: 0 auto; /* Center horizontally */
-	display: flex; /* Enable flexbox */
-	flex-direction: column; /* Align content vertically */
-	justify-content: center; /* Center content vertically */
-	align-items: center; /* Center content horizontally */
-	min-height: 100vh; /* Ensure full viewport height */
 }
 
 /* back arrow */
