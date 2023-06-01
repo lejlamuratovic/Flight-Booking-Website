@@ -42,6 +42,12 @@
     margin-right: 20px;
     margin-bottom: 3px;
     background-color: transparent;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--font-color);
 }
 
 .info-second-row select {
@@ -166,14 +172,35 @@ input:not(:placeholder-shown) + .info-form-label {
         align-items: center;
     }
 
-    .info-first-row input, .info-second-row input, .info-third-row input, .info-first-row input[type="tel"], .info-second-row select {
+    .info-first-row input, .info-second-row input, .info-third-row input {
         margin: 15px 0;
+    }
+
+    .input-group-phone, .input-group-date {
+        margin-top: 15px;
+    }
+
+    .info-second-row select {
+        margin: 15px 0;
+    }
+    
+    input:not(:focus):placeholder-shown + .info-form-label {
+        top: 32px;
+    }
+    
+    input:focus + .info-form-label,
+    input:not(:placeholder-shown) + .info-form-label {
+        top: 7px;
+    }
+
+    .info-select-label {
+        top: 4px;
     }
 }
 
 @media screen and (max-width: 446px) {
     .info-first-row input, .info-second-row input, .info-third-row input, .info-first-row input[type="tel"], .info-second-row select {
-        width: 260px;
+        width: 280px;
     }
 
     .passenger-info-menu {
@@ -181,6 +208,16 @@ input:not(:placeholder-shown) + .info-form-label {
     }
     
     .passenger-info {
-        padding: 10px;
+        padding: 15px;
     }
 }
+
+@keyframes highlight {
+    0% {background: #ffff99;}
+    100% {background: none;}
+}
+
+.highlighted {
+    animation: highlight 1s;
+}
+

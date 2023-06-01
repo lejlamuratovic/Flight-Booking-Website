@@ -77,14 +77,14 @@
                             <label for="passenger-surname" class="info-form-label"> Surame </label>
                         </div>
 
-                        <div class="input-group">
+                        <div class="input-group input-group-phone">
                             <input type="tel" class="form-control" id="phone" placeholder=" " required>
                             <label for="phone" class="info-form-label input-group-addon"> Phone Number </label>
                         </div>
                     </div>
 
                     <div class="info-second-row">
-                        <div class="input-group">
+                        <div class="input-group input-group-date">
                             <input type="date" id="date-of-birth" placeholder=" " required>
                             <label for="date-of-birth" class="info-form-label"> Date of Birth </label>
                         </div>
@@ -133,5 +133,46 @@
                 utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/8.4.6/js/utils.js"
             });
         </script>
+
+        <script>
+            document.getElementById('autocomplete').addEventListener('change', function () {
+                if (this.checked) {
+                    // The checkbox is checked
+                    // Here, you should replace the values with the actual values from the user's profile.
+                    document.getElementById('passenger-name').value = 'John';
+                    document.getElementById('passenger-surname').value = 'Doe';
+                    document.getElementById('phone').value = '+123456789';
+                    document.getElementById('date-of-birth').value = '1990-01-01';  // format should be: yyyy-mm-dd
+            
+                    highlightInputs();
+                } else {
+                    // The checkbox is not checked
+                    // Clear the fields.
+                    document.getElementById('passenger-name').value = '';
+                    document.getElementById('passenger-surname').value = '';
+                    document.getElementById('phone').value = '';
+                    document.getElementById('date-of-birth').value = '';
+            
+                    removeHighlights();
+                }
+            });
+            
+            function highlightInputs() {
+                var inputs = ['passenger-name', 'passenger-surname', 'phone', 'date-of-birth'];
+                for(var i = 0; i < inputs.length; i++){
+                    document.getElementById(inputs[i]).classList.add('highlighted');
+                }
+                setTimeout(removeHighlights, 1000);  // remove the highlight after 1 second
+            }
+            
+            function removeHighlights() {
+                var inputs = ['passenger-name', 'passenger-surname', 'phone', 'date-of-birth'];
+                for(var i = 0; i < inputs.length; i++){
+                    document.getElementById(inputs[i]).classList.remove('highlighted');
+                }
+            }
+        </script>
+    
+    
     </body>
 </html>
