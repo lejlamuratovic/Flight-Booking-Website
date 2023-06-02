@@ -278,6 +278,7 @@ body {
 
 .booking-form {
 	padding: 0 20px;
+	height: 100%;
 }
 
 .form-inputs {
@@ -290,6 +291,11 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.form-inputs .third-row {
+    position: relative;
+	height: 70px;
 }
 
 .form-inputs .second-row {
@@ -453,11 +459,11 @@ body {
 }
 
 .retrieve-btn {
-	position: absolute;
 	margin: 5px 0 20px 15px;
-	padding-right: 30px;
+	padding: 10px 30px;
 	position: absolute;
-	right: 36px;
+	top: 15px;
+	right: 0;
 }
 
 .check-btn {
@@ -465,10 +471,8 @@ body {
 }
 
 .retrieve-btn-icon {
-	position: absolute;
-	right: 10px;
 	top: 50%;
-	transform: translateY(-50%);
+	transform: translateY(18%);
 	width: 10px;
 	height: auto;
 }
@@ -480,7 +484,8 @@ body {
 	white-space: nowrap;
 	padding: 10px 30px;
 	position: absolute;
-	right: 36px;
+	right: 0;
+	top: -10px;
 }
   
 
@@ -527,6 +532,17 @@ body {
 
 	.form-inputs .second-row .first-column {
 		margin-left: 80px;
+	}
+
+	.retrieve-btn {
+		padding: 10px 30px;
+		right: 20%;
+	}
+	
+	.search-btn {
+		right: 20%;
+		top: 10px;
+		margin: auto;
 	}
 }
 
@@ -701,7 +717,7 @@ body {
 }
 
 /* Media query for mobile view */
-@media (max-width: 480px) {
+@media (max-width: 520px) {
 	.form {
 		margin-top: 250px;
 		height: auto;
@@ -783,5 +799,13 @@ body {
 
 	.second-row .second-column .input-container {
 		margin-top: 20px;
+	}
+
+	.retrieve-btn {
+		right: 18%;
+	}
+	
+	.search-btn {
+		right: 15%;
 	}
 }

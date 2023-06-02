@@ -1,0 +1,77 @@
+.ticket-overview {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.first-ticket {
+    width: 340px;
+    height: 590px;
+    background-image: url(img/ticket-bg.png);
+    background-size: cover;
+    background-position: center center;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    margin-right: 30px;
+}
+
+.first-ticket .ticket-header {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #DFDFDF;
+}
+
+.first-ticket .ticket-header img {
+    display: block;
+    margin: 25px auto;
+}
+
+.ticket-header .ticket-flight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ticket-header .ticket-flight img {
+    width: 150px;
+    height: auto;
+}
+
+.ticket-header .ticket-flight p {
+    text-align: center;
+    font-family: 'Poppins';
+    padding: 0 10px;
+    color: #dfdfdf;
+}
+
+.ticket-overview .ticket-flight-info {
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 0 10px;
+    margin: 20px auto;
+    width: 90%;
+    border-bottom: 1px dashed #DCDEE3;
+}
+
+.ticket-overview .ticket-flight-info p {
+    width: 130px;
+    font-family: 'Poppins';
+    padding: 0 10px;
+    color: #dfdfdf;
+    padding-bottom: 25px;
+}
+
+.ticket-overview .ticket-flight-info p span {
+    color: #8C8A93;
+}
+
+.ticket-overview .barcode {
+    display: block;
+    margin: auto;
+    padding-top: 15px;
+}

@@ -146,12 +146,13 @@
 						</div>
 					  </div>
 
-					  
+					<div class="third-row">
 						<button class="button search-btn">
 							<img src="img/search.png" alt="Right Arrow" class="search-btn-icon" />
 							Search Flights
 						  </button>
-						  
+					</div>
+
 					</div>
 				</div>
 			  </div>
@@ -169,11 +170,13 @@
 					  <label for="to-input" class="form-label">Passenger's Last Name</label>
 					</div>
 				  </div>
-		  
-				  <button class="button retrieve-btn">
-					Retrieve Booking
-					<img src="img/right-arrow.png" alt="Right Arrow" class="retrieve-btn-icon" />
-				  </button>
+
+				  <div class="third-row">
+					<button class="button retrieve-btn">
+						Retrieve Booking
+						<img src="img/right-arrow.png" alt="Right Arrow" class="retrieve-btn-icon" />
+					  </button>
+					</div>
 				</div>
 			  </div>
 		  
@@ -191,10 +194,12 @@
 					</div>
 				  </div>
 		  
+				  <div class="third-row">
 				  <button class="button retrieve-btn">
 					Check Flight
 					<img src="img/right-arrow.png" alt="Right Arrow" class="retrieve-btn-icon" />
 				  </button>
+				  </div>
 				</div>
 			  </div>
 			</div>
@@ -337,36 +342,8 @@
 				<p>IEnvA Registered</p>
 			</div>
 		</section>
-		</body>
-		</html>
 
-		<script>
-			// JavaScript code to handle the toggle functionality of the hamburger menu
-			const hamburgerMenu = document.querySelector(".hamburger-menu");
-			const mobileMenu = document.querySelector(".mobile-menu");
-			hamburgerMenu.addEventListener("click", function () {
-				mobileMenu.classList.toggle("show");
-			});
-		</script>
-
-		<script>
-			$(".form-control").each(function () {
-				floatedLabel($(this));
-			});
-
-			$(".form-control").on("input", function () {
-				floatedLabel($(this));
-			});
-
-			function floatedLabel(input) {
-				var $field = input.closest(".form-group");
-				if (input.val()) {
-					$field.addClass("input-not-empty");
-				} else {
-					$field.removeClass("input-not-empty");
-				}
-			}
-		</script>
+		<script src="navigation.js"></script>
 
 		<script>
 			document.addEventListener("DOMContentLoaded", function () {
