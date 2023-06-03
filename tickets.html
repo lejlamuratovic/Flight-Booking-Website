@@ -7,6 +7,7 @@
 		<!-- css files -->
 		<link rel="stylesheet" href="style.css" />
 		<link rel="stylesheet" href="tickets.css" />
+		<link rel="stylesheet" href="baggage.css" />
 
 		<!-- google fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,7 +23,8 @@
 
 		<!-- bootstrap -->
 		<link type="text/css" rel="stylesheet" href="bootstrap.min.css" />
-		<title>HighAir</title>
+		<title>Ticket Selection</title>
+		<link rel="icon" href="img/logo-notext.png">
 	</head>
 	<body>
 		<nav class="main-navigation">
@@ -83,23 +85,23 @@
 			<p>Showing results for: </p>
 			<div class="previous-form">
 				<div class="input-container">
-					<input class="form-input from-input" type="text" />
+					<input class="form-input from-input" type="text" placeholder = "Sarajevo SJJ" />
 					<label class="input-label">From</label>
 				</div>
 				<div class="input-container">
-					<input class="form-input to-input" type="text" />
+					<input class="form-input to-input" type="text" placeholder = "Amsterdam AMS"/>
 					<label class="input-label">To</label>
 				</div>
 				<div class="input-container">
-					<input class="form-input"/>
+					<input class="form-input" placeholder = "15/04/23"/>
 					<label class="input-label">Departure Date</label>
 				</div>
 				<div class="input-container">
-					<input class="form-input"/>
+					<input class="form-input" placeholder = "19/04/23"/>
 					<label class="input-label">Return Date</label>
 				</div>
 				<div class="input-container">
-					<input class="form-input"/>
+					<input class="form-input" placeholder = "1"/>
 					<label class="input-label">Passengers</label>
 				</div>
 				<button class="button modify-btn">
@@ -416,39 +418,23 @@
 			
 			</section>
 
-			<p class="back-button">
-				Back
-			</p>
+			<div class="ticket-form-controls">
+				<p class="back-button">
+					Back
+				</p>
+
+				<button class="button continue-ticket-btn">
+					Continue
+					<img
+						src="img/right-arrow.png"
+						alt="Right Arrow"
+						class="continue-baggage-icon"
+					/>
+				</button>
+			</div>
 
 			<script src="navigation.js"></script>
-
-		<script>
-			$(document).ready(function(){
-				$(".selection-1").click(function(){
-					$(".first-selection").not('.selected-ticket').hide(500); 
-					$(".selected-ticket").css('display', 'flex').hide().fadeIn(1000); 
-				});
-				
-				$(".back-button").click(function(){
-					$(".first-selection").fadeIn(1000);
-					$(".selected-ticket").fadeOut(1000);
-				});
-			});
-		</script>
-		
-		<script>
-			$(document).ready(function(){
-				$(".selection-2").click(function(){
-					$(".second-selection").not('.selected-ticket-2').hide(500); 
-					$(".selected-ticket-2").css('display', 'flex').hide().fadeIn(1000);
-				});
-			
-				$(".back-button").click(function(){
-					$(".second-selection").fadeIn(1000); 
-					$(".selected-ticket-2").fadeOut(1000);
-				});
-			});
-		</script>
+			<script src="tickets.js"></script>
 		
 	</body>
 </html>
