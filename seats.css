@@ -6,6 +6,10 @@
     width: fit-content;
 }
 
+.steps-seat {
+    margin-bottom: 40px;
+}
+
 .seat-direction p {
     font-family: 'Poppins';
     font-style: normal;
@@ -17,7 +21,7 @@
 
 .seat-direction {
     display: flex;
-    margin: 10px auto;
+    margin: 20px auto;
     align-items: center;
     width: fit-content;
 }

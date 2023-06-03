@@ -79,7 +79,7 @@
 
 input:not(:focus):placeholder-shown + .info-form-label {
     pointer-events: none;
-    top: 17px;
+    top: 27px;
     left: 15px;
     font-size: 16px;
     transition: all 0.3s ease-in-out;
@@ -88,7 +88,7 @@ input:not(:focus):placeholder-shown + .info-form-label {
 input:focus + .info-form-label,
 input:not(:placeholder-shown) + .info-form-label {
     pointer-events: none;
-    top: -8px;
+    top: 2px;
     left: 15px;
     font-size: 16px;
     transition: all 0.3s ease-in-out;
