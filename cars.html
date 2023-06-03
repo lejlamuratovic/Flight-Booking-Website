@@ -7,6 +7,7 @@
 		<!-- css files -->
 		<link rel="stylesheet" href="style.css" />
         <link rel="stylesheet" href="hotels.css" />
+        <link rel="stylesheet" href="cars.css" />
 		<!-- google fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -48,56 +49,45 @@
 			</div>
 		</nav>
 
-        <div class="hotel-banner-content">
-            <h1> FIND YOUR PERFECT STAY WITH EASE </h1>
-            <h3> Book with us and enjoy the best rates on hotels </h3>
+        <div class="hotel-banner-content cars-banner-content">
+            <h1> FLY, DRIVE, AND ARRIVE IN STYLE </h1>
+            <h3>  Book your car rental alongside your flight reservation </h3>
         </div>
 
         <section class="hotel-form">
-            <div class="partnership">
-                <img src="img/booking.png" alt="">
-                <p>In partnership with <span>Booking.com</span></p>
+            <div class="partnership rentalcars">
+                <img src="img/rentalcars.png"  alt="">
+                <p>In partnership with <span>Rentalcars.com</span></p>
             </div>
             <form action="#">
                 <div class="hotel-first-row">
                     <div class="hotel-input-container">
-                        <input type="text" id="destination" placeholder=" " required>
-                        <label for="destination" class="hotel-label">Destination</label>
+                        <input type="text" id="location" placeholder=" " required>
+                        <label for="location" class="hotel-label">Pick-up location</label>
                     </div>
 
                     <div class="hotel-input-container">
-                        <input type="date" id="in-date" placeholder=" " required>
-                        <label for="in-date" class="hotel-label"> Check-in Date </label>
+                        <input type="date" id="up-date" placeholder=" " required>
+                        <label for="up-date" class="hotel-label"> Pick-up Date </label>
                     </div>
 
                     <div class="hotel-input-container">
-                        <input type="date" id="out-date" placeholder=" " required>
-                        <label for="out-date" class="hotel-label"> Check-out Date </label>
+                        <input type="time" id="up-time" placeholder=" " required>
+                        <label for="up-time" class="hotel-label"> Pick-up Time </label>
                     </div>
                 </div>
 
                 <div class="hotel-second-row">
                     <div class="hotel-input-container">
-                        <select id="guests" placeholder=" " required>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        </select>
-                        <label for="guests" class="hotel-select-label">Guests</label>
+                        <input type="date" id="off-date" placeholder=" " required>
+                        <label for="off-date" class="hotel-label"> Drop-off Date </label>
                     </div>
 
                     <div class="hotel-input-container">
-                        <select id="rooms" placeholder=" " required>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        </select>
-                        <label for="rooms" class="hotel-select-label">Rooms</label>
+                        <input type="time" id="off-time" placeholder=" " required>
+                        <label for="off-time" class="hotel-label"> Drop-off Time </label>
                     </div>
+                    
 
                     <button class="button search-hotel-btn">
                         <img src="img/search.png" alt="Right Arrow" class="search-hotel-btn-icon" />
