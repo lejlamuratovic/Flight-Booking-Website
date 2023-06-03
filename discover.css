@@ -1,0 +1,95 @@
+body {
+    background-image: url(img/discover.png);
+}
+
+.discover-form {
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0px 4px 4px rgba(39, 35, 46, 0.47);
+    border-radius: 10px 10px 10px 10px;
+}
+
+.discover-form .form-checkbox {
+    font-family: 'Poppins';
+}
+
+.discover-banner-content h1 {
+    font-family: 'Fira Sans Condensed';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 150%;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 0px rgba(38, 35, 46, 0.25);
+}
+
+.discover-banner-content {
+    position: relative; 
+    top: 250px;
+}
+
+.tourist-offers {
+    position: relative; 
+    top: 100px;
+    width: 90%;
+    margin: auto;
+}
+
+.tourist-text {
+    display: block;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    color: var(--font-color);
+}
+
+.tourist-text span {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.tourist-offers .areas {
+    display: flex; 
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.tourist-offers .area {
+    width: 300px;
+    height: 440px;
+    font-family: 'Fira Sans Condensed';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 100%;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    position: relative;
+    margin: 15px;
+}
+
+.tourist-offers .area img {
+    width: 300px;
+    height: 440px;
+}
+
+.tourist-offers p {
+    position: absolute;
+    top: 400px;
+    left: 15px;
+}
+
+.img-hover-zoom {
+    overflow: hidden; 
+}
+
+.img-hover-zoom img {
+    transition: transform .5s ease;
+}
+
+.img-hover-zoom:hover img {
+    transform: scale(1.1);
+}
