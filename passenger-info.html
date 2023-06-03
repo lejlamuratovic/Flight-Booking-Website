@@ -6,9 +6,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<!-- css files -->
 		<link rel="stylesheet" href="style.css" />
-        <link rel="stylesheet" href="baggage.css" />
-        <link rel="stylesheet" href="tickets.css" />
-        <link rel="stylesheet" href="passenger-info.css" />
+		<link rel="stylesheet" href="baggage.css" />
+		<link rel="stylesheet" href="tickets.css" />
+		<link rel="stylesheet" href="passenger-info.css" />
 		<!-- google fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,20 +17,32 @@
         
 		<script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<<<<<<< HEAD
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/8.4.7/js/intlTelInput.js"></script>
 
+=======
+
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/8.4.7/js/intlTelInput.js"></script>
+
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/8.4.6/css/intlTelInput.css"
+			rel="stylesheet"
+		/>
+
+>>>>>>> b132e2bc8aefb659ffee80262fc7ade3ea113aa5
 		<title>HighAir</title>
 	</head>
-    <body>
+	<body>
 		<nav class="main-navigation">
 			<img src="img/logo.svg" alt="Logo" class="img-logo" />
 			<img src="img/mobile-logo.png" alt="Logo" class="img-logo mobile-logo" />
 			<ul>
 				<li><a href="#">Help</a></li>
-				<li><a href="#">Hotels</a></li>
-				<li><a href="#">Cars</a></li>
-				<li><a href="#">Sign In</a></li>
+				<li><a href="hotels.html">Hotels</a></li>
+				<li><a href="cars.html">Cars</a></li>
+				<li><a href="login.html">Sign In</a></li>
 				<li>
 					<span class="last-option"><a href="#">Sign Up</a></span>
 				</li>
@@ -38,161 +50,164 @@
 			<div class="hamburger-menu">&#9776;</div>
 			<div class="mobile-menu">
 				<ul>
-					<li><a href="#">Homepage</a></li>
+					<li><a href="index.html">Homepage</a></li>
 					<li><a href="#">Help</a></li>
-					<li><a href="#">Hotels</a></li>
-					<li><a href="#">Cars</a></li>
+					<li><a href="hotels.html">Hotels</a></li>
+					<li><a href="cars.html">Cars</a></li>
 				</ul>
 			</div>
 		</nav>
 
-        <section class="steps">
-			<div class="step">
-				<img src="img/steps-plane-active.png" alt="">
-				<p>Flights</p>
-				<img src="img/steps-divider.png" class="steps-divider" alt="">
+		<section class="steps"></section>
+
+		<section class="passenger-info-menu">
+			<div class="passenger-info">
+				<form action="">
+					<div class="checkbox-container">
+						<input
+							type="checkbox"
+							id="autocomplete"
+							name="autocomplete"
+							value="autocomplete"
+						/>
+						<label for="autocomplete" class="checkbox-label">
+							Autocomplete information from my profile
+						</label>
+					</div>
+
+					<div class="info-first-row">
+						<div class="input-group">
+							<input type="text" id="passenger-name" placeholder=" " required />
+							<label for="passenger-name" class="info-form-label"> Name </label>
+						</div>
+
+						<div class="input-group">
+							<input
+								type="text"
+								id="passenger-surname"
+								placeholder=" "
+								required
+							/>
+							<label for="passenger-surname" class="info-form-label">
+								Surname
+							</label>
+						</div>
+
+						<div class="input-group input-group-phone">
+							<input
+								type="tel"
+								class="form-control"
+								id="phone"
+								placeholder=" "
+								required
+							/>
+							<label for="phone" class="info-form-label input-group-addon">
+								Phone Number
+							</label>
+						</div>
+					</div>
+
+					<div class="info-second-row">
+						<div class="input-group input-group-date">
+							<input type="date" id="date-of-birth" placeholder=" " required />
+							<label for="date-of-birth" class="info-form-label">
+								Date of Birth
+							</label>
+						</div>
+
+						<div class="input-group">
+							<select id="title" placeholder=" " required>
+								<option value="male">Male</option>
+								<option value="female">Female</option>
+							</select>
+							<label for="title" class="info-select-label">Title</label>
+						</div>
+					</div>
+
+					<div class="info-third-row">
+						<div class="input-group">
+							<input type="text" id="passport" placeholder=" " required />
+							<label for="passport" class="info-form-label">
+								Passport Number
+							</label>
+						</div>
+
+						<div class="input-group">
+							<input type="text" id="id-num" placeholder=" " required />
+							<label for="id-num" class="info-form-label"> ID Number </label>
+						</div>
+					</div>
+				</form>
 			</div>
 
-			<div class="step">
-				<img src="img/steps-seat-inactive.png" alt="">
-				<p>Seats</p>
-				<img src="img/steps-divider.png" class="steps-divider" alt="">
+			<div class="info-navigation-options">
+				<p class="info-back-button">Back</p>
+
+				<button class="button continue-info-btn">
+					Continue
+					<img
+						src="img/right-arrow.png"
+						alt="Right Arrow"
+						class="continue-info-icon"
+					/>
+				</button>
 			</div>
+		</section>
 
-			<div class="step">
-				<img src="img/steps-bags-inactive.png" alt="">
-				<p>Bags</p>
-				<img src="img/steps-divider.png" class="steps-divider" alt="">
-			</div>
+		<script src="navigation.js"></script>
 
-			<div class="step active">
-				<img src="img/steps-extras-inactive.png" alt="">
-				<p>Extras</p>
-				<img src="img/steps-divider.png" class="steps-divider" alt="">
-			</div>
+		<script>
+			$("#phone").intlTelInput({
+				utilsScript:
+					"https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/8.4.6/js/utils.js",
+			});
+		</script>
 
-			<div class="step">
-				<img src="img/steps-review-inactive.png" alt="">
-				<p>Review</p>
-			</div>
-        </section>
+		<script>
+			document
+				.getElementById("autocomplete")
+				.addEventListener("change", function () {
+					if (this.checked) {
+						document.getElementById("passenger-name").value = "John";
+						document.getElementById("passenger-surname").value = "Doe";
+						document.getElementById("phone").value = "+123456789";
+						document.getElementById("date-of-birth").value = "1990-01-01"; // format should be: yyyy-mm-dd
 
-        <section class="passenger-info-menu">
-            <div class="passenger-info">
-                <form action="">
+						highlightInputs();
+					} else {
+						document.getElementById("passenger-name").value = "";
+						document.getElementById("passenger-surname").value = "";
+						document.getElementById("phone").value = "";
+						document.getElementById("date-of-birth").value = "";
 
-                    <input type="checkbox" id="autocomplete" name="autocomplete" value="autocomplete">
-                    <label for="autocomplete" class="checkbox-label"> Autocomplete information from my profile </label><br>
+						removeHighlights();
+					}
+				});
 
-                    <div class="info-first-row">
-                        <div class="input-group">
-                            <input type="text" id="passenger-name" placeholder=" " required>
-                            <label for="passenger-name" class="info-form-label"> Name </label>
-                        </div>
+			function highlightInputs() {
+				var inputs = [
+					"passenger-name",
+					"passenger-surname",
+					"phone",
+					"date-of-birth",
+				];
+				for (var i = 0; i < inputs.length; i++) {
+					document.getElementById(inputs[i]).classList.add("highlighted");
+				}
+				setTimeout(removeHighlights, 1000);
+			}
 
-                        <div class="input-group">
-                            <input type="text" id="passenger-surname" placeholder=" " required>
-                            <label for="passenger-surname" class="info-form-label"> Surame </label>
-                        </div>
-
-                        <div class="input-group input-group-phone">
-                            <input type="tel" class="form-control" id="phone" placeholder=" " required>
-                            <label for="phone" class="info-form-label input-group-addon"> Phone Number </label>
-                        </div>
-                    </div>
-
-                    <div class="info-second-row">
-                        <div class="input-group input-group-date">
-                            <input type="date" id="date-of-birth" placeholder=" " required>
-                            <label for="date-of-birth" class="info-form-label"> Date of Birth </label>
-                        </div>
-
-                        <div class="input-group">
-                            <select id="title" placeholder=" " required>
-                                <option value="male">Male</option>
-                                <option value="female">Female</option>
-                            </select>
-                            <label for="title" class="info-select-label">Title</label>
-                        </div>
-                    </div>
-
-                    <div class="info-third-row">
-                        <div class="input-group">
-                            <input type="text" id="passport" placeholder=" " required>
-                            <label for="passport" class="info-form-label"> Passport Number </label>
-                        </div>
-    
-                        <div class="input-group">
-                            <input type="text" id="id-num" placeholder=" " required>
-                            <label for="id-num" class="info-form-label"> ID Number </label>
-                        </div>
-                    </div>
-                </form>
-            </div>
-
-            <div class="info-navigation-options">
-                <p class="info-back-button">
-                    Back
-                </p>
-        
-                <button class="button continue-info-btn">
-                    Continue
-                    <img
-                        src="img/right-arrow.png"
-                        alt="Right Arrow"
-                        class="continue-info-icon"
-                    />
-                </button>
-            </div>
-        </section>
-
-        <script src="navigation.js"></script>
-
-        <script>
-            $("#phone").intlTelInput({
-                utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/8.4.6/js/utils.js"
-            });
-        </script>
-
-        <script>
-            document.getElementById('autocomplete').addEventListener('change', function () {
-                if (this.checked) {
-                    // The checkbox is checked
-                    // Here, you should replace the values with the actual values from the user's profile.
-                    document.getElementById('passenger-name').value = 'John';
-                    document.getElementById('passenger-surname').value = 'Doe';
-                    document.getElementById('phone').value = '+123456789';
-                    document.getElementById('date-of-birth').value = '1990-01-01';  // format should be: yyyy-mm-dd
-            
-                    highlightInputs();
-                } else {
-                    // The checkbox is not checked
-                    // Clear the fields.
-                    document.getElementById('passenger-name').value = '';
-                    document.getElementById('passenger-surname').value = '';
-                    document.getElementById('phone').value = '';
-                    document.getElementById('date-of-birth').value = '';
-            
-                    removeHighlights();
-                }
-            });
-            
-            function highlightInputs() {
-                var inputs = ['passenger-name', 'passenger-surname', 'phone', 'date-of-birth'];
-                for(var i = 0; i < inputs.length; i++){
-                    document.getElementById(inputs[i]).classList.add('highlighted');
-                }
-                setTimeout(removeHighlights, 1000);  // remove the highlight after 1 second
-            }
-            
-            function removeHighlights() {
-                var inputs = ['passenger-name', 'passenger-surname', 'phone', 'date-of-birth'];
-                for(var i = 0; i < inputs.length; i++){
-                    document.getElementById(inputs[i]).classList.remove('highlighted');
-                }
-            }
-        </script>
-    
-    
-    </body>
+			function removeHighlights() {
+				var inputs = [
+					"passenger-name",
+					"passenger-surname",
+					"phone",
+					"date-of-birth",
+				];
+				for (var i = 0; i < inputs.length; i++) {
+					document.getElementById(inputs[i]).classList.remove("highlighted");
+				}
+			}
+		</script>
+	</body>
 </html>
