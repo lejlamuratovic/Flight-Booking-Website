@@ -60,7 +60,7 @@ body {
 
 /* icons */
 input[type="text"] {
-	background-image: url("/img/email.png");
+	/* background-image: url("/img/email.png"); */
 	background-repeat: no-repeat;
 	background-position: left;
 	background-size: 23px 23px;
@@ -69,7 +69,7 @@ input[type="text"] {
 }
 
 input[type="password"] {
-	background-image: url("/img/lock.png");
+	/* background-image: url("/img/lock.png"); */
 	background-repeat: no-repeat;
 	background-position: left;
 	background-size: 23px 23px;
@@ -239,4 +239,57 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 	.form .column {
 		flex-wrap: wrap;
 	}
+}
+
+.password-input-container {
+	position: relative;
+}
+
+.password-input {
+	padding-right: 40px;
+}
+
+.show-password {
+	position: absolute;
+	top: 56%;
+	right: 15px;
+	transform: translateY(-50%);
+	font-size: 16px;
+	color: #26232e;
+	cursor: pointer;
+	user-select: none;
+}
+
+/* 2nd try */
+
+.input-box {
+	position: relative;
+}
+
+.password-icon {
+	position: absolute;
+	left: 12px;
+	top: 60%;
+	transform: translateY(-60%);
+	width: 23px;
+	height: 23px;
+}
+
+.password-input {
+	padding-left: 40px;
+}
+
+/* email icon */
+
+.email-icon {
+	position: absolute;
+	left: 12px;
+	top: 69%;
+	transform: translateY(-50%);
+	width: 23px;
+	height: 23px;
+}
+
+.email-input {
+	padding-left: 40px;
 }
