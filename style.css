@@ -821,7 +821,6 @@ body {
 	box-sizing: border-box;
 }
 .footer {
-	margin-top: 150px;
 	width: 100%;
 	background: var(--primary-color-1);
 	color: var(--font-color);

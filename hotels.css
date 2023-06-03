@@ -80,6 +80,7 @@ body {
     padding: 10px;
     margin-right: 20px;
     margin-bottom: 3px;
+    background-color: transparent;
 }
 
 .hotel-form #rooms {
@@ -99,7 +100,7 @@ body {
 
 input:not(:focus):placeholder-shown + .hotel-label {
     pointer-events: none;
-    top: 13px;
+    top: 23px;
     left: 15px;
     font-size: 16px;
     transition: all 0.3s ease-in-out;
@@ -109,7 +110,7 @@ input:focus + .hotel-label,
 input:not(:placeholder-shown) + .hotel-label {
     background-color: #fff;
     pointer-events: none;
-    top: -10px;
+    top: -2px;
     left: 15px;
     font-size: 16px;
     transition: all 0.3s ease-in-out;
