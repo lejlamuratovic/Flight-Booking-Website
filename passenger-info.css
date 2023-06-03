@@ -241,14 +241,10 @@ input:not(:placeholder-shown) + .info-form-label {
 }
 
 input[type="checkbox"] {
-	transform: scale(1.1);
+	width: 50px;
+	height: auto;
 }
 
-.checkbox-container {
-	display: flex;
-	align-items: center;
-	padding-left: 32px;
-}
 .checkbox-label {
 	padding-left: 10px;
 }
@@ -258,8 +254,17 @@ input[type="checkbox"] {
 }
 
 .checkbox-container {
+	display: flex;
+	align-items: center;
+	padding-left: 32px;
 	position: absolute;
 	top: 0;
 	left: 0;
-	white-space: nowrap;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	/* white-space: nowrap; */
+}
+
+.footer {
+	margin-top: 100px;
 }
