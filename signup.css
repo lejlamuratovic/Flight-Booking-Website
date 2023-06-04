@@ -298,3 +298,15 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .email-input {
 	padding-left: 40px;
 }
+
+.input-box input.error {
+	border: 1px solid red !important;
+}
+
+.input-box input.valid {
+	border: 1px solid green !important;
+}
+
+label.error {
+	color: red;
+}

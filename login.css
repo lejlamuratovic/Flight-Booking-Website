@@ -57,7 +57,7 @@ input[type="text"] {
 	background-repeat: no-repeat;
 	background-position: left;
 	background-size: 23px 23px;
-	padding-left: 40px; /* Increased padding */
+	padding-left: 40px;
 	background-position: 10px center;
 }
 
@@ -66,7 +66,7 @@ input[type="password"] {
 	background-repeat: no-repeat;
 	background-position: left;
 	background-size: 23px 23px;
-	padding-left: 40px; /* Increased padding */
+	padding-left: 40px;
 	background-position: 10px center;
 }
 /* icons */
@@ -134,31 +134,31 @@ input[type="password"] {
 	color: rgba(38, 35, 46, 0.81);
 	font-size: 1rem;
 	font-weight: 600;
-	margin-top: 10px; /* adjust as needed */
-	border: 1px solid #e9e9e9; /* add this line */
+	margin-top: 10px;
+	border: 1px solid #e9e9e9;
 	cursor: pointer;
 	transition: all 0.2s ease;
-	background: #fff; /* white background */
+	background: #fff;
 	border-radius: 10px;
-	display: flex; /* enable flex layout */
-	align-items: center; /* vertically center the content */
-	justify-content: center; /* horizontally center the content */
-	padding: 0 20px; /* add padding to the button */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 20px;
 }
 
 .form .google-icon {
-	width: 29px; /* set image width */
-	height: 29px; /* set image height */
-	background-image: url(img/google_icon.png); /* add the image */
+	width: 29px;
+	height: 29px;
+	background-image: url(img/google_icon.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	margin-right: 10px; /* add some space between the image and text */
+	margin-right: 10px;
 }
 
 .form .google-signup:hover {
-	background: #f2f2f2; /* slightly darker on hover */
-	border-color: #d0d0d0; /* slightly darker border on hover */
+	background: #f2f2f2;
+	border-color: #d0d0d0;
 }
 
 .bottom-text {
@@ -181,3 +181,15 @@ input[type="password"] {
 }
 
 /* nav bar */
+
+.input-box input.error {
+	border: 1px solid red !important;
+}
+
+.input-box input.valid {
+	border: 1px solid green !important;
+}
+
+label.error {
+	color: red;
+}

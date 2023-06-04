@@ -266,3 +266,16 @@ input:not(:placeholder-shown) + .checkout-form-label {
         width: 350px;
     }
 }
+
+.input-box input.error {
+	border: 1px solid red !important;
+}
+
+.input-box input.valid {
+	border: 1px solid green !important;
+}
+
+label.error {
+	color: red;
+    font-weight: 400;
+}
