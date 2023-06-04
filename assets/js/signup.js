@@ -1,18 +1,17 @@
-document.addEventListener("DOMContentLoaded", function () {
-	var checkbox = document.getElementById("skipCheckbox");
-	var nameInput = document.querySelector(".name-input");
-	var phoneInput = document.querySelector('input[type="number"]');
-	var dobInput = document.querySelector(".date-input");
-
-	checkbox.addEventListener("change", function () {
-		if (checkbox.checked) {
-			nameInput.setAttribute("disabled", "disabled");
-			phoneInput.setAttribute("disabled", "disabled");
-			dobInput.setAttribute("disabled", "disabled");
+$(document).ready(function () {
+	$("#skipCheckbox").change(function () {
+		if ($(this).is(":checked")) {
+			$(".name-input, .phone-input, .dob-input").prop("disabled", true);
+			$(".name-input, .phone-input, .dob-input").css(
+				"background-color",
+				"darkgrey"
+			);
 		} else {
-			nameInput.removeAttribute("disabled");
-			phoneInput.removeAttribute("disabled");
-			dobInput.removeAttribute("disabled");
+			$(".name-input, .phone-input, .dob-input").prop("disabled", false);
+			$(".name-input, .phone-input, .dob-input").css(
+				"background-color",
+				"white"
+			);
 		}
 	});
 });

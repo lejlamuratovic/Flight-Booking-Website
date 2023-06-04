@@ -9,7 +9,7 @@
 		<link rel="stylesheet" href="assets/style/login.css" />
 
 		<title>Signup</title>
-		<link rel="icon" href="assets/img/logo-notext.png">
+		<link rel="icon" href="assets/img/logo-notext.png" />
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
@@ -50,7 +50,7 @@
 					<a href="forgot-password.html">Forgot password?</a>
 				</div>
 
-				<button>Sign Up</button>
+				<button id="signin-btn">Sign in</button>
 
 				<button class="google-signup">
 					<span class="google-icon"></span>
@@ -62,47 +62,59 @@
 				</div>
 			</form>
 		</section>
-		
+
 		<script>
-			$(document).ready(function() {
-				$.validator.addMethod('validEmail', function(value, element) {
-					return value === 'johndoe@gmail.com';
-				}, 'Email is not valid.');
-				
-				$.validator.addMethod('validPassword', function(value, element) {
-					return value === 'johndoe123';
-				}, 'Password is not correct.');
-				
-				$('.form').validate({
+			$(document).ready(function () {
+				$.validator.addMethod(
+					"validEmail",
+					function (value, element) {
+						return value === "johndoe@gmail.com";
+					},
+					"Email is not valid."
+				);
+
+				$.validator.addMethod(
+					"validPassword",
+					function (value, element) {
+						return value === "johndoe123";
+					},
+					"Password is not correct."
+				);
+
+				$(".form").validate({
 					rules: {
 						email: {
 							required: true,
 							email: true,
-							validEmail: true
+							validEmail: true,
 						},
 						password: {
 							required: true,
-							validPassword: true
-						}
+							validPassword: true,
+						},
 					},
 					messages: {
 						email: {
-							required: 'Please enter your email address.'
+							required: "Please enter your email address.",
 						},
 						password: {
-							required: 'Please enter your password.'
-						}
+							required: "Please enter your password.",
+						},
 					},
-					highlight: function(element, errorClass) {
-						$(element).addClass('error');
+					highlight: function (element, errorClass) {
+						$(element).addClass("error");
 					},
-					unhighlight: function(element, errorClass) {
-						$(element).removeClass('error');
+					unhighlight: function (element, errorClass) {
+						$(element).removeClass("error");
 					},
-					errorElement: 'div',
-					errorLabelContainer: '.error-message'
+					errorElement: "div",
+					errorLabelContainer: ".error-message",
 				});
 			});
+
+			document.getElementById("signin-btn").onclick = function () {
+				location.href = "passenger-info.html";
+			};
 		</script>
 	</body>
 </html>

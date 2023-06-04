@@ -134,10 +134,36 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .form .input-box {
 	width: 100%;
 	margin-top: 20px;
+	position: relative;
+}
+.phone-box {
+	/* margin-top: 20px; */
+	padding-top: 20px;
 }
 
+.input-box #broj_telefona {
+	position: absolute;
+	top: -10px;
+	left: 0px;
+}
 .input-box label {
 	color: #333;
+}
+
+.phone-box input {
+	width: 176%;
+}
+
+@media screen and (max-width: 500px) {
+	.phone-box input {
+		width: 120%;
+	}
+}
+
+@media screen and (max-width: 300) {
+	.phone-box input {
+		width: 100%;
+	}
 }
 
 .form :where(.input-box input, .select-box) {
@@ -309,6 +335,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 label.error {
 	color: red;
+	line-height: 2px;
 }
 
 .field-container {

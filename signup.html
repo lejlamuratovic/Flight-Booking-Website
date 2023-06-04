@@ -57,29 +57,32 @@
 				</div>
 
 				<div class="input-box">
-					<label>Full Name</label>
-					<input
-						type="text"
-						class="name-input"
-						placeholder="Enter full name"
-					/>
-				</div>
+	<label>Full Name</label>
+	<input
+		type="text"
+		class="name-input"
+		placeholder="Enter full name"
+	/>
+</div>
 
-				<div class="input-box">
-					<input type="tel" id="phone" placeholder="Enter phone number">
-					<label class="input-group-addon"> Phone Number </label>
-				</div>
+<div class="input-box phone-box" >
+	
+	<input type="tel" id="phone" placeholder="Enter phone number" class="phone-input">
+	
+	<label class="input-group-addon" id = "broj_telefona"> Phone Number </label>
+</div>
 
-				<div class="input-box">
-					<label>Date of Birth</label>
-					<input
-						type="date"
-						class="date-input"
-						placeholder="Enter birth date"
-					/>
-				</div>
+<div class="input-box">
+	<label>Date of Birth</label>
+	<input
+		type="date"
+		class="dob-input"
+		placeholder="Enter birth date"
+	/>
+</div>
 
-				<button>Sign Up</button>
+
+				<button id="signup-btn">Sign Up</button>
 
 				<button class="google-signup">
 					<span class="google-icon"></span>
@@ -108,8 +111,10 @@
 		<script>
 			$(document).ready(function () {
 				$.validator.addMethod("passwordCheck", function(value, element) {
-					return this.optional(element) || /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])([a-zA-Z0-9]{8,})$/.test(value);
-				}, "Password must be at least 8 characters long and contain at least one number");
+    return this.optional(element) || /^(?=.*[0-9])(?=.*[a-zA-Z])[a-zA-Z0-9]{8,}$/.test(value);
+}, "Password must be at least 8 characters long and contain at least one number");
+
+
 			
 				$('.form').validate({
 					rules: {
@@ -138,7 +143,16 @@
 					ui: { showVerdictsInsideProgressBar: true }
 				});
 			});
+
+
+			
+
+			
 			</script>
-				
+			<script>
+				document.getElementById("signup-btn").onclick = function () {
+				location.href = "signup-verify.html";
+			};
+			</script>	
 	</body>
 </html>
