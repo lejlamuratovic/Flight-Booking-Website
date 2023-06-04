@@ -29,13 +29,13 @@
 
 	<body>
 		<nav class="main-navigation">
-			<img src="assets/img/logo.svg" alt="Logo" class="img-logo" />
-			<img src="assets/img/mobile-logo.png" alt="Logo" class="img-logo mobile-logo" />
+			<img src="assets/img/logo.svg" alt="Logo" class="img-logo" id="homepage"/>
+			<img src="assets/img/mobile-logo.png" alt="Logo" class="img-logo mobile-logo" id="homepage-mobile"/>
 			<ul>
 				<li><a href="#">Help</a></li>
-				<li><a href="#">Hotels</a></li>
-				<li><a href="#">Cars</a></li>
-				<li><a href="#">Sign In</a></li>
+				<li><a href="hotels.html">Hotels</a></li>
+				<li><a href="cars.html">Cars</a></li>
+				<li><a href="signup.html">Sign In</a></li>
 				<li>
 					<span class="last-option"><a href="#">Sign Up</a></span>
 				</li>
@@ -45,8 +45,8 @@
 				<ul>
 					<li><a href="#">Homepage</a></li>
 					<li><a href="#">Help</a></li>
-					<li><a href="#">Hotels</a></li>
-					<li><a href="#">Cars</a></li>
+					<li><a href="hotels.html">Hotels</a></li>
+					<li><a href="cars.html">Cars</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -457,9 +457,9 @@
 			</div>
 
 			<div class="seat-navigation-options">
-				<p class="seat-back-button">Back</p>
+				<p class="seat-back-button" id="backButton">Back</p>
 
-				<button class="button continue-seat-btn">
+				<button class="button continue-seat-btn" id="myButton">
 					Continue
 					<img
 						src="assets/img/right-arrow.png"
@@ -520,5 +520,22 @@
 			</div>
 		</footer>
 		<script src="assets/js/navigation.js"></script>
+		<script>
+			document.getElementById("myButton").onclick = function () {
+				location.href = "baggage.html";
+			};
+
+			document.getElementById("backButton").onclick = function () {
+				location.href = "tickets.html";
+			};
+
+			document.getElementById("homepage").onclick = function () {
+					location.href = "index.html";
+			};
+
+			document.getElementById("homepage-mobile").onclick = function () {
+					location.href = "index.html";
+			};
+		</script>
 	</body>
 </html>

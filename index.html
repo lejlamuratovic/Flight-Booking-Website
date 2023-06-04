@@ -177,7 +177,7 @@
 							</div>
 
 							<div class="third-row">
-								<button class="button search-btn">
+								<button class="button search-btn" id="myButton2">
 									<img
 										src="assets/img/search.png"
 										alt="Right Arrow"
@@ -262,7 +262,7 @@
 					the captivating essence of the city during your transit at Amsterdam
 					Airport.
 				</p>
-				<button class="button discover-btn">
+				<button class="button discover-btn" id="myButton">
 					Discover
 					<img
 						src="assets/img/right-arrow.png"
@@ -444,5 +444,15 @@
 
 		<script src="assets/js/navigation.js"></script>
 		<script src="aseets/js/flight-form.js"></script>
+
+		<script type="text/javascript">
+			document.getElementById("myButton").onclick = function () {
+				location.href = "discover.html";
+			};
+
+			document.getElementById("myButton2").onclick = function () {
+				location.href = "tickets.html";
+			};
+		</script>
 	</body>
 </html>
