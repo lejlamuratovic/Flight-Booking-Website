@@ -30,15 +30,15 @@
 	</head>
 	<body>
 		<nav class="main-navigation">
-			<img src="assets/img/logo.svg" alt="Logo" class="img-logo" />
-			<img src="assets/img/mobile-logo.png" alt="Logo" class="img-logo mobile-logo" />
+			<img src="assets/img/logo.svg" alt="Logo" class="img-logo" id="homepage"/>
+			<img src="assets/img/mobile-logo.png" alt="Logo" class="img-logo mobile-logo" id="homepage-mobile"/>
 			<ul>
 				<li><a href="#">Help</a></li>
 				<li><a href="hotels.html">Hotels</a></li>
 				<li><a href="cars.html">Cars</a></li>
 				<li><a href="login.html">Sign In</a></li>
 				<li>
-					<span class="last-option"><a href="#">Sign Up</a></span>
+					<span class="last-option"><a href="signup.html">Sign Up</a></span>
 				</li>
 			</ul>
 			<div class="hamburger-menu">&#9776;</div>
@@ -166,9 +166,9 @@
 			</div>
 
 			<div class="info-navigation-options">
-				<p class="info-back-button">Back</p>
+				<p class="info-back-button" id="backButton">Back</p>
 
-				<button class="button continue-info-btn">
+				<button class="button continue-info-btn" id="myButton">
 					Continue
 					<img
 						src="assets/img/right-arrow.png"
@@ -237,6 +237,22 @@
 				utilsScript:
 					"https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/8.4.6/js/utils.js",
 			});
+
+			document.getElementById("myButton").onclick = function () {
+				location.href = "purchase.html";
+			};
+
+			document.getElementById("backButton").onclick = function () {
+				location.href = "baggage.html";
+			};
+
+			document.getElementById("homepage").onclick = function () {
+					location.href = "index.html";
+			};
+
+			document.getElementById("homepage-mobile").onclick = function () {
+					location.href = "index.html";
+			};
 		</script>
 	</body>
 </html>

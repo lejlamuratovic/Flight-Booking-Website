@@ -27,8 +27,8 @@
 	</head>
 	<body>
 		<nav class="main-navigation">
-			<img src="assets/img/logo.svg" alt="Logo" class="img-logo" />
-			<img src="assets/img/mobile-logo.png" alt="Logo" class="img-logo mobile-logo" />
+			<img src="assets/img/logo.svg" alt="Logo" class="img-logo" id="homepage"/>
+			<img src="assets/img/mobile-logo.png" alt="Logo" class="img-logo mobile-logo" id="homepage-mobile"/>
 			<ul>
 				<li><a href="#">Help</a></li>
 				<li><a href="#">Hotels</a></li>
@@ -422,7 +422,7 @@
 					Back
 				</p>
 
-				<button class="button continue-ticket-btn">
+				<button class="button continue-ticket-btn" id="myButton">
 					Continue
 					<img
 						src="assets/img/right-arrow.png"
@@ -434,6 +434,19 @@
 
 			<script src="assets/js/navigation.js"></script>
 			<script src="assets/js/tickets.js"></script>
+			<script>
+				document.getElementById("myButton").onclick = function () {
+					location.href = "seats.html";
+				};
+
+				document.getElementById("homepage").onclick = function () {
+					location.href = "index.html";
+			};
+
+			document.getElementById("homepage-mobile").onclick = function () {
+					location.href = "index.html";
+			};
+			</script>
 		
 	</body>
 </html>

@@ -26,8 +26,8 @@
 	</head>
 	<body>
 		<nav class="main-navigation">
-			<img src="assets/img/logo.svg" alt="Logo" class="img-logo" />
-			<img src="assets/img/mobile-logo.png" alt="Logo" class="img-logo mobile-logo" />
+			<img src="assets/img/logo.svg" alt="Logo" class="img-logo" id="homepage"/>
+			<img src="assets/img/mobile-logo.png" alt="Logo" class="img-logo mobile-logo" id="homepage-mobile"/>
 			<ul>
 				<li><a href="#">Help</a></li>
 				<li><a href="hotels.html">Hotels</a></li>
@@ -151,9 +151,9 @@
 		<p class="additional-fee">Additional fee: <span> $6.00 </span></p>
 
 		<div class="navigation-options">
-			<p class="baggage-back-button">Back</p>
+			<p class="baggage-back-button" id="backButton">Back</p>
 
-			<button class="button continue-baggage-btn">
+			<button class="button continue-baggage-btn" id="myButton">
 				Continue
 				<img
 					src="assets/img/right-arrow.png"
@@ -164,6 +164,15 @@
 		</div>
 
 		<script src="assets/js/navigation.js"></script>
+		<script>
+			document.getElementById("homepage").onclick = function () {
+					location.href = "index.html";
+			};
+
+			document.getElementById("homepage-mobile").onclick = function () {
+					location.href = "index.html";
+			};
+		</script>
 
 		<!-- footer -->
 		<footer class="footer">
@@ -215,5 +224,15 @@
 				</div>
 			</div>
 		</footer>
+
+		<script>
+			document.getElementById("myButton").onclick = function () {
+				location.href = "signup.html";
+			};
+
+			document.getElementById("backButton").onclick = function () {
+				location.href = "seats.html";
+			};
+		</script>
 	</body>
 </html>
