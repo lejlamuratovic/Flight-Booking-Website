@@ -204,6 +204,24 @@ input[type="date"], .hotel-select-label {
         position: static;
         margin: auto;
     }
+
+    input:not(:focus):placeholder-shown + .hotel-label {
+        pointer-events: none;
+        top: 13px;
+        left: 15px;
+        font-size: 16px;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    input:focus + .hotel-label,
+    input:not(:placeholder-shown) + .hotel-label {
+        background-color: #fff;
+        pointer-events: none;
+        top: -12px;
+        left: 15px;
+        font-size: 16px;
+        transition: all 0.3s ease-in-out;
+    }
 }
 
 @media (max-width: 458px) {
