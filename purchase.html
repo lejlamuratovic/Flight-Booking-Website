@@ -84,47 +84,140 @@
         </section>
 
         <section class="ticket-overview">
-            <div class="first-ticket">
-                <div class="ticket-header">
-                    <img src="img/logo-notext.png" alt="" class="ticket-logo">
-                    <div class="ticket-flight">
-                        <p>SJJ<br>Sarajevo</p>
-                        <img src="img/ticket-art.png" alt="" class="ticket-art">
-                        <p>AMS<br>Amsterdam</p>
-                    </div>
-                </div>
-                <div class="ticket-flight-info">
-                    <p><span>PASSENGER</span><br>John Doe</p>
-                    <p><span>FLIGHT NUMBER</span><br>SA143</p>
-                    <p><span>DATE AND TIME</span><br>April 15, 10:00</p>
-                    <p><span>SEAT</span><br>E6</p>
-                    <p><span>CLASS</span><br>Economy</p>
-                    <p><span>GATE</span><br>3</p>
-                </div>
+			<div class="tickets">
+				<div class="first-ticket">
+					<div class="ticket-header">
+						<img src="img/logo-notext.png" alt="" class="ticket-logo">
+						<div class="ticket-flight">
+							<p>SJJ<br>Sarajevo</p>
+							<img src="img/ticket-art.png" alt="" class="ticket-art">
+							<p>AMS<br>Amsterdam</p>
+						</div>
+					</div>
+					<div class="ticket-flight-info">
+						<div class="info-1">
+							<p><span>PASSENGER</span><br>John Doe</p>
+							<p><span>FLIGHT NUMBER</span><br>SA143</p>
+						</div>
 
-                <img src="img/barcode.png" alt="" class="barcode">
-            </div>
+						<div class="info-2">
+							<p><span>DATE AND TIME</span><br>April 15, 10:00</p>
+							<p><span>SEAT</span><br>E6</p>
+						</div>
 
-            <div class="first-ticket">
-                <div class="ticket-header">
-                    <img src="img/logo-notext.png" alt="" class="ticket-logo">
-                    <div class="ticket-flight">
-                        <p>SJJ<br>Sarajevo</p>
-                        <img src="img/ticket-art.png" alt="" class="ticket-art">
-                        <p>AMS<br>Amsterdam</p>
-                    </div>
-                </div>
-                <div class="ticket-flight-info">
-                    <p><span>PASSENGER</span><br>John Doe</p>
-                    <p><span>FLIGHT NUMBER</span><br>SA143</p>
-                    <p><span>DATE AND TIME</span><br>April 15, 10:00</p>
-                    <p><span>SEAT</span><br>E6</p>
-                    <p><span>CLASS</span><br>Economy</p>
-                    <p><span>GATE</span><br>3</p>
-                </div>
+						<div class="info-3">
+							<p><span>CLASS</span><br>Economy</p>
+							<p><span>GATE</span><br>3</p>
+						</div>
+					</div>
 
-                <img src="img/barcode.png" alt="" class="barcode">
-            </div>
+					<img src="img/barcode.png" alt="" class="barcode">
+				</div>
+
+				<div class="first-ticket">
+					<div class="ticket-header">
+						<img src="img/logo-notext.png" alt="" class="ticket-logo">
+						<div class="ticket-flight">
+							<p>SJJ<br>Sarajevo</p>
+							<img src="img/ticket-art.png" alt="" class="ticket-art">
+							<p>AMS<br>Amsterdam</p>
+						</div>
+					</div>
+					<div class="ticket-flight-info">
+						<div class="info-1">
+							<p><span>PASSENGER</span><br>John Doe</p>
+							<p><span>FLIGHT NUMBER</span><br>SA143</p>
+						</div>
+
+						<div class="info-2">
+							<p><span>DATE AND TIME</span><br>April 15, 10:00</p>
+							<p><span>SEAT</span><br>E6</p>
+						</div>
+
+						<div class="info-3">
+							<p><span>CLASS</span><br>Economy</p>
+							<p><span>GATE</span><br>3</p>
+						</div>
+					</div>
+
+					<img src="img/barcode.png" alt="" class="barcode">
+				</div>
+			</div>
+
+			<div class="form-container">
+			<div class="checkout-form">
+				<div class="buttons">
+					<button class="paypal">
+						<img src="img/paypal.png" alt="">
+					</button>
+					<button class="gpay">
+						<img src="img/gpay.png" alt="">
+					</button>
+				</div>
+				<p>Enter credit card details</p>
+				<form action="#">
+					<div class="input-row">
+						<div class="input-group">
+							<input type="text" id="card-num" placeholder=" " required />
+							<label for="card-num" class="checkout-form-label"> Card Number </label>
+						</div>
+
+						<img src="img/credit-card.png" alt="">
+					</div>
+
+					<div class="input-row">
+						<div class="input-group">
+							<input type="text" id="first-name" placeholder=" " required />
+							<label for="first-name" class="checkout-form-label"> First Name </label>
+						</div>
+
+						<div class="input-group">
+							<input type="text" id="last-name" placeholder=" " required />
+							<label for="last-name" class="checkout-form-label"> Last Name </label>
+						</div>
+					</div>
+
+					<div class="input-row">
+						<div class="input-group">
+							<input type="text" id="exp-code" placeholder=" " required />
+							<label for="exp-code" class="checkout-form-label"> Expiration Date </label>
+						</div>
+
+						<div class="input-group">
+							<input type="text" id="cvv" placeholder=" " required />
+							<label for="cvv" class="checkout-form-label"> CVV </label>
+						</div>
+					</div>
+
+					<div class="input-row">
+						<div class="input-group">
+							<input type="text" id="security-code" placeholder=" " required />
+							<label for="security-code" class="checkout-form-label"> Security Code </label>
+						</div>
+
+						<div class="input-group">
+							<input type="text" id="zip-code" placeholder=" " required />
+							<label for="zip-code" class="checkout-form-label"> Billing Zip Code </label>
+						</div>
+					</div>
+				</form>
+			</div>
+
+			<div class="info-navigation-options">
+				<p class="info-back-button">Back</p>
+
+				<button class="button continue-info-btn">
+					Continue
+					<img
+						src="img/right-arrow.png"
+						alt="Right Arrow"
+						class="continue-info-icon"
+					/>
+				</button>
+			</div>
+
+		</div>
+
         </section>
 
         <script src="navigation.js"></script>
