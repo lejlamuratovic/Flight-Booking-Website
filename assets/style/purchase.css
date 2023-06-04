@@ -10,7 +10,7 @@
 .first-ticket {
     width: 330px;
     height: 590px;
-    background-image: url(img/ticket-bg.png);
+    background-image: url(../img/ticket-bg.png);
     background-size: cover;
     background-position: center center;
     object-fit: contain;

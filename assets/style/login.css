@@ -38,13 +38,6 @@ body {
 }
 /* back arrow */
 
-.horizontal-line {
-	margin-top: 20px;
-	margin-bottom: 20px;
-	border-top: 2px;
-	background: rgba(38, 35, 46, 0.7);
-}
-
 .container h3 {
 	font-size: 22px;
 	color: #d64045;
@@ -60,67 +53,23 @@ body {
 
 /* icons */
 input[type="text"] {
-	/* background-image: url("/img/email.png"); */
+	background-image: url("../img/email.png");
 	background-repeat: no-repeat;
 	background-position: left;
 	background-size: 23px 23px;
-	padding-left: 40px; /* Increased padding */
+	padding-left: 40px;
 	background-position: 10px center;
 }
 
 input[type="password"] {
-	/* background-image: url("/img/lock.png"); */
+	background-image: url("../img/lock.png");
 	background-repeat: no-repeat;
 	background-position: left;
 	background-size: 23px 23px;
-	padding-left: 40px; /* Increased padding */
+	padding-left: 40px;
 	background-position: 10px center;
 }
-
-input[type="text"].name-input {
-	background-image: url("/img/user.png");
-	background-repeat: no-repeat;
-	background-position: left;
-	background-size: 24px 24px;
-	padding-left: 40px; /* Increased padding */
-	background-position: 10px center;
-}
-
-input[type="date"] {
-	background-image: url("/img/date.png");
-	background-repeat: no-repeat;
-	background-position: left;
-	background-size: 21px 22px;
-	padding-left: 40px; /* Increased padding */
-	background-position: 10px center;
-}
-input[type="date"]::-webkit-calendar-picker-indicator {
-	display: none;
-}
-
 /* icons */
-
-/* checkbox */
-.checkbox-container {
-	display: flex;
-	align-items: center;
-	padding-top: 10px;
-	padding-left: 10px;
-}
-
-.checkbox-container input[type="checkbox"] {
-	margin-right: 10px;
-	height: 15px;
-	width: 15px;
-	cursor: pointer;
-}
-
-.checkbox-container label {
-	font-size: 16px;
-	color: #26232e;
-}
-
-/* checkbox */
 
 .container header {
 	font-size: 27.9px;
@@ -135,11 +84,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 	width: 100%;
 	margin-top: 20px;
 }
-
 .input-box label {
 	color: #333;
 }
-
 .form :where(.input-box input, .select-box) {
 	position: relative;
 	height: 50px;
@@ -152,11 +99,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 	border-radius: 6px;
 	padding: 0 15px;
 }
-
 .input-box input:focus {
 	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
 }
-
 .form .column {
 	display: flex;
 	column-gap: 15px;
@@ -166,22 +111,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 	margin-top: 15px;
 }
 
-.select-box select {
-	height: 100%;
-	width: 100%;
-	outline: none;
-	border: none;
-	color: #707070;
-	font-size: 1rem;
-}
-
 .form button {
 	height: 55px;
 	width: 100%;
 	color: #fff;
 	font-size: 1rem;
 	font-weight: 400;
-	margin-top: 30px;
+	margin-top: 25px;
 	border: none;
 	cursor: pointer;
 	transition: all 0.2s ease;
@@ -198,31 +134,31 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 	color: rgba(38, 35, 46, 0.81);
 	font-size: 1rem;
 	font-weight: 600;
-	margin-top: 10px; /* adjust as needed */
-	border: 1px solid #e9e9e9; /* add this line */
+	margin-top: 10px;
+	border: 1px solid #e9e9e9;
 	cursor: pointer;
 	transition: all 0.2s ease;
-	background: #fff; /* white background */
+	background: #fff;
 	border-radius: 10px;
-	display: flex; /* enable flex layout */
-	align-items: center; /* vertically center the content */
-	justify-content: center; /* horizontally center the content */
-	padding: 0 20px; /* add padding to the button */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 20px;
 }
 
 .form .google-icon {
-	width: 29px; /* set image width */
-	height: 29px; /* set image height */
-	background-image: url(img/google_icon.png); /* add the image */
+	width: 29px;
+	height: 29px;
+	background-image: url(../img/google_icon.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	margin-right: 10px; /* add some space between the image and text */
+	margin-right: 10px;
 }
 
 .form .google-signup:hover {
-	background: #f2f2f2; /* slightly darker on hover */
-	border-color: #d0d0d0; /* slightly darker border on hover */
+	background: #f2f2f2;
+	border-color: #d0d0d0;
 }
 
 .bottom-text {
@@ -233,71 +169,18 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 	font-weight: 400;
 }
 
-.form h5 {
-	font-size: 10px;
-	color: rgba(38, 35, 46, 0.8);
-	font-weight: 300;
-	text-align: center;
-}
-
 @media screen and (max-width: 500px) {
 	.form .column {
 		flex-wrap: wrap;
 	}
 }
 
-.password-input-container {
-	position: relative;
+.forgot-password {
+	text-align: right;
+	padding-top: 15px;
 }
 
-.password-input {
-	padding-right: 40px;
-}
-
-.show-password {
-	position: absolute;
-	top: 56%;
-	right: 15px;
-	transform: translateY(-50%);
-	font-size: 16px;
-	color: #26232e;
-	cursor: pointer;
-	user-select: none;
-}
-
-/* 2nd try */
-
-.input-box {
-	position: relative;
-}
-
-.password-icon {
-	position: absolute;
-	left: 12px;
-	top: 60%;
-	transform: translateY(-60%);
-	width: 23px;
-	height: 23px;
-}
-
-.password-input {
-	padding-left: 40px;
-}
-
-/* email icon */
-
-.email-icon {
-	position: absolute;
-	left: 12px;
-	top: 69%;
-	transform: translateY(-50%);
-	width: 23px;
-	height: 23px;
-}
-
-.email-input {
-	padding-left: 40px;
-}
+/* nav bar */
 
 .input-box input.error {
 	border: 1px solid red !important;
