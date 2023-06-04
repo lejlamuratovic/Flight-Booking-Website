@@ -110,49 +110,48 @@
         </script>
 		<script>
 			$(document).ready(function () {
-				$.validator.addMethod("passwordCheck", function(value, element) {
-    return this.optional(element) || /^(?=.*[0-9])(?=.*[a-zA-Z])[a-zA-Z0-9]{8,}$/.test(value);
-}, "Password must be at least 8 characters long and contain at least one number");
+				$.validator.addMethod(
+					"passwordCheck",
+					function (value, element) {
+					return (
+						this.optional(element) ||
+						/^(?=.*[0-9])(?=.*[a-zA-Z])[a-zA-Z0-9]{8,}$/.test(value)
+					);
+					},
+					"Password must be at least 8 characters long and contain at least one number"
+				);
 
-
-			
-				$('.form').validate({
+				$(".form").validate({
 					rules: {
-						email: {
-							required: true,
-							email: true
-						},
-						password: {
-							required: true,
-							passwordCheck: true
-						}
+					email: {
+						required: true,
+						email: true,
+					},
+					password: {
+						required: true,
+						passwordCheck: true,
+					},
 					},
 					messages: {
-						email: {
-							required: "This field is required",
-							email: "Please enter a valid email address"
-						},
-						password: {
-							required: "This field is required",
-							passwordCheck: "Password must be at least 8 characters long and contain at least one number"
-						}
+					email: {
+						required: "This field is required",
+						email: "Please enter a valid email address",
+					},
+					password: {
+						required: "This field is required",
+						passwordCheck:
+						"Password must be at least 8 characters long and contain at least one number",
+					},
+					},
+				});
+
+				$("#signup-btn").click(function (event) {
+					event.preventDefault();
+					if ($(".form").valid()) {
+					location.href = "signup-verify.html";
 					}
 				});
-				
-				$('#password').pwstrength({
-					ui: { showVerdictsInsideProgressBar: true }
 				});
-			});
-
-
-			
-
-			
 			</script>
-			<script>
-				document.getElementById("signup-btn").onclick = function () {
-				location.href = "signup-verify.html";
-			};
-			</script>	
 	</body>
 </html>

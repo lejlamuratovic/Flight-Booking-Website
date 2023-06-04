@@ -65,56 +65,60 @@
 
 		<script>
 			$(document).ready(function () {
-				$.validator.addMethod(
-					"validEmail",
-					function (value, element) {
-						return value === "johndoe@gmail.com";
-					},
-					"Email is not valid."
-				);
+  $.validator.addMethod(
+    "validEmail",
+    function (value, element) {
+      return value === "johndoe@gmail.com";
+    },
+    "Email is not valid."
+  );
 
-				$.validator.addMethod(
-					"validPassword",
-					function (value, element) {
-						return value === "johndoe123";
-					},
-					"Password is not correct."
-				);
+  $.validator.addMethod(
+    "validPassword",
+    function (value, element) {
+      return value === "johndoe123";
+    },
+    "Password is not correct."
+  );
 
-				$(".form").validate({
-					rules: {
-						email: {
-							required: true,
-							email: true,
-							validEmail: true,
-						},
-						password: {
-							required: true,
-							validPassword: true,
-						},
-					},
-					messages: {
-						email: {
-							required: "Please enter your email address.",
-						},
-						password: {
-							required: "Please enter your password.",
-						},
-					},
-					highlight: function (element, errorClass) {
-						$(element).addClass("error");
-					},
-					unhighlight: function (element, errorClass) {
-						$(element).removeClass("error");
-					},
-					errorElement: "div",
-					errorLabelContainer: ".error-message",
-				});
-			});
+  $(".form").validate({
+    rules: {
+      email: {
+        required: true,
+        email: true,
+        validEmail: true,
+      },
+      password: {
+        required: true,
+        validPassword: true,
+      },
+    },
+    messages: {
+      email: {
+        required: "Please enter your email address.",
+      },
+      password: {
+        required: "Please enter your password.",
+      },
+    },
+    highlight: function (element, errorClass) {
+      $(element).addClass("error");
+    },
+    unhighlight: function (element, errorClass) {
+      $(element).removeClass("error");
+    },
+    errorElement: "div",
+    errorLabelContainer: ".error-message",
+    submitHandler: function (form) {
+      location.href = "passenger-info.html";
+    },
+  });
 
-			document.getElementById("signin-btn").onclick = function () {
-				location.href = "passenger-info.html";
-			};
+  document.getElementById("signin-btn").onclick = function () {
+    $(".form").submit();
+  };
+});
+
 		</script>
 	</body>
 </html>
