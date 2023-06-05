@@ -151,12 +151,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .phone-box input {
-	width: 176%;
+	width: 100%;
 }
 
 @media screen and (max-width: 500px) {
 	.phone-box input {
-		width: 120%;
+		width: 100%;
 	}
 }
 
